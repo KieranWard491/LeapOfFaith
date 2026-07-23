@@ -1,0 +1,23 @@
+# Godot 4
+.godot/
+
+# Imported assets
+.import/
+
+# Export templates
+export.cfg
+
+# Mono / C#
+.mono/
+*.csproj
+*.sln
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# VS Code
+.vscode/
