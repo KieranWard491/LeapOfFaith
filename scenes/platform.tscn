@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://pwwxnqpwcck3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v4t87"]
+size = Vector2(120, 20)
+
+[node name="Platform" type="StaticBody2D" unique_id=846096950]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1130296083]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2024827965]
+shape = SubResource("RectangleShape2D_v4t87")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1476382286]
+color = Color(0.6666667, 0.44313726, 0.7176471, 1)
+polygon = PackedVector2Array(-59, -9, 59, -9, 60, 9, -60, 10)
