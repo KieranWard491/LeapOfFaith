@@ -1,7 +1,17 @@
 [gd_scene format=3 uid="uid://dv7goo5at7pxe"]
 
+[ext_resource type="Script" uid="uid://i17bxfgcvbvf" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="Texture2D" uid="uid://c8n5bchup5gmf" path="res://art/placeholders/frog_idle.png" id="2_qhqgy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u8vuu"]
+size = Vector2(14, 11)
+
 [node name="Player" type="CharacterBody2D" unique_id=1455050960]
+script = ExtResource("1_g2els")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=167881431]
+texture = ExtResource("2_qhqgy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1858561586]
+position = Vector2(-2, 1.5)
+shape = SubResource("RectangleShape2D_u8vuu")
