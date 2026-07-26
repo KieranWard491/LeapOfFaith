@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c5o1qdfwe0dd"]
+
+[ext_resource type="Texture2D" uid="uid://i663psduloc4" path="res://art/placeholders/fly_idle.png" id="1_djddo"]
+[ext_resource type="Script" uid="uid://c8ug27fci652w" path="res://collectibles/fly.gd" id="1_xr3pu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3v5hf"]
+radius = 9.055386
+
+[node name="Fly" type="Area2D" unique_id=104058787]
+script = ExtResource("1_xr3pu")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1413329665]
+texture = ExtResource("1_djddo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1253639136]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_3v5hf")

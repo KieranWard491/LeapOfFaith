@@ -9,6 +9,7 @@ size = Vector2(120, 20)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2024827965]
 shape = SubResource("RectangleShape2D_v4t87")
+one_way_collision = true
 
 [node name="Polygon2D" type="Polygon2D" parent="." unique_id=1476382286]
 color = Color(0.6666667, 0.44313726, 0.7176471, 1)

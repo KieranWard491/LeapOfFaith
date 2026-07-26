@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://chvylyq5uqmur" path="res://scripts/camera_controller.gd" id="3_sugp2"]
 [ext_resource type="Script" uid="uid://coaupp03wglnl" path="res://scripts/death_zone.gd" id="4_jyhfs"]
 [ext_resource type="Script" uid="uid://taf45dxvfmhr" path="res://scripts/platform_generator.gd" id="5_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://c5o1qdfwe0dd" path="res://scenes/fly.tscn" id="6_tefeu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3v5hf"]
 size = Vector2(1400, 80)
@@ -35,5 +36,8 @@ script = ExtResource("5_tbgi4")
 platform_scene = ExtResource("2_0wfyh")
 starting_platform = NodePath("../StartingPlatform")
 camera = NodePath("../Camera2D")
+
+[node name="Fly" parent="." unique_id=104058787 instance=ExtResource("6_tefeu")]
+position = Vector2(624, 377)
 
 [connection signal="body_entered" from="DeathZone" to="DeathZone" method="_on_body_entered"]
